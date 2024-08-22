@@ -40,8 +40,8 @@ class IOTService:
 
     async def run_program(self, program: list[Message]) -> None:
         print("=====RUNNING PROGRAM======")
-        for messege in program:
-            await self.send_msg(messege)
+        for message in program:
+            await self.send_msg(message)
         print("=====END OF PROGRAM======")
 
     async def send_msg(self, msg: Message) -> None:
